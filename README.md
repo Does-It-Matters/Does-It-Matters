@@ -5,15 +5,15 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 
 # 대표 프로젝트
 ### 질의응답 시스템 ###
-OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Java, 디자인패턴, 운영, 모니터링 등 배운 이론 총집약한 맞춤형 질의응답 시스템
+OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Java, 디자인패턴, 운영, 모니터링 등 <br> 이전의 프로젝트 경험과 배운 이론 총집약한 맞춤형 의료 질의응답 시스템
 
 | 프로젝트명 | 목표 | 기간 |
 | - | - | - |
-| medical-qna-monitor | GraalVM, C언어, Monitoring System Resource & Log, Spring Boot, WebSocket | 24.07.01. ~ |
-| medical-qna-client | JavaFx, 비동기 병렬 프로그래밍, 디자인패턴, 자료구조 & 정렬, WebSocket | 24.07.01. ~ |
-| medical-qna-gqteway | Spring Cloud Gateway, Proxy Server, 캐시, 로드밸런서 | 24.07.01. ~ |
-| symptom-similarity-service | SBERT, 지식 그래프 | 24.07.01. ~ |
-| my-health-ap-server | Application Server, Spring Boot, JPA, Test | 24.02.07. ~ |
+| medical-qna-monitor | <strong>개요</strong><br> (1) 노드 시스템 자원 측정 및 모니터링 <br> (2) Application Server에 대한 로그 모니터링 <br><br> <strong>기술 스택</strong><br> GraalVM, C언어, Monitoring System Resource & Log, Spring Boot, WebSocket | 24.07.01. ~ |
+| medical-qna-client | <strong>개요</strong><br> (1) 운영자의 노드 모니터링용 클라이언트 <br> (2) 일반 사용자의 질의응답용 클라이언트 <br><br> <strong>기술 스택</strong><br> JavaFx, 비동기 병렬 프로그래밍, 디자인패턴, 자료구조 & 정렬, WebSocket | 24.07.01. ~ |
+| medical-qna-gqteway | <strong>개요</strong><br> (1) Application Server에 대한 Proxy Server <br> (2) AP server 분산을 위한 로드밸런서 <br><br> <strong>기술 스택</strong><br> Spring Cloud Gateway, Proxy Server, 캐시, 로드밸런서 | 24.07.01. ~ |
+| symptom-similarity-service | <strong>개요</strong><br> (1) SBERT를 활용하여 Sentence Embedding <br> (2) 지식 그래프를 활용하여 맞춤형 서비스 <br><br> <strong>기술 스택</strong><br> SBERT, 지식 그래프 | 24.06.27. ~ |
+| my-health-ap-server | <strong>개요</strong><br> (1) 질의 응답 서비스 <br> (2) 회원 관리 <br><br> <strong>기술 스택</strong><br> Application Server, Spring Boot, JPA, Test | 24.02.07. ~ |
 
 <br>
 
