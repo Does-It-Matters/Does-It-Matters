@@ -9,7 +9,7 @@ OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Jav
 
 | 프로젝트명 | 목표 | 기간 |
 | - | - | - |
-| medical-qna-monitor | <strong>개요</strong><br> (1) 노드 시스템 자원 측정 및 모니터링 <br> (2) Application Server에 대한 로그 모니터링 <br><br> <strong>기술 스택</strong><br> GraalVM, C언어, Monitoring System Resource & Log, Spring Boot, WebSocket | 24.07.01. ~ |
+| medical-qna-monitor | <strong>개요</strong><br> (1) 노드 시스템 자원 측정 및 모니터링 <br> (2) Application Server에 대한 로그 모니터링 <br><br> <strong>기술 스택</strong><br> C언어, Monitoring System Resource & Log, Spring Boot, WebSocket | 24.07.01. ~ |
 | medical-qna-client | <strong>개요</strong><br> (1) 운영자의 노드 모니터링용 클라이언트 <br> (2) 일반 사용자의 질의응답용 클라이언트 <br><br> <strong>기술 스택</strong><br> JavaFX, 비동기 병렬 프로그래밍, 디자인패턴, 자료구조 & 정렬, WebSocket | 24.07.01. ~ |
 | medical-qna-gateway | <strong>개요</strong><br> (1) Application Server에 대한 Proxy Server <br> (2) AP server 분산을 위한 로드밸런서 <br><br> <strong>기술 스택</strong><br> Spring Cloud Gateway, Proxy Server, 캐시, 로드밸런서 | 24.07.01. ~ |
 | symptom-similarity-service | <strong>개요</strong><br> (1) SBERT를 활용하여 Sentence Embedding <br> (2) 지식 그래프를 활용하여 맞춤형 서비스 <br><br> <strong>기술 스택</strong><br> SBERT, 지식 그래프 | 24.06.27. ~ |
