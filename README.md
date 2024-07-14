@@ -1,11 +1,12 @@
 # 삶의 방향
 _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
-<br> <br> 많이 서투르더라도 조금씩 나의 길로 나아가자
+<br> <br> 많이 서투르더라도 나의 길을 걸어가자
 <hr> 
 
 # 대표 프로젝트
 ### 질의응답 시스템 ###
-OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Java, 디자인패턴, 운영, 모니터링 등 <br> 이전의 프로젝트 경험과 배운 이론 총집약한 맞춤형 의료 질의응답 시스템
+구성: 6가지 프로젝트
+<br>OS, 자료구조, 알고리즘, 디자인패턴, 네트워크, 데이터베이스, C, Java, 운영, 모니터링 등 <br> 이전의 프로젝트 경험과 배운 이론 총집약한 맞춤형 의료 질의응답 시스템
 
 | 프로젝트명 | 목표 | 기간 |
 | - | - | - |
@@ -14,6 +15,7 @@ OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Jav
 | medical-qna-gateway | <strong>개요</strong><br> (1) Application Server에 대한 Proxy Server <br> (2) AP server 분산을 위한 로드밸런서 <br><br> <strong>기술 스택</strong><br> Spring Cloud Gateway, Proxy Server, 캐시, 로드밸런서 | 24.07.01. ~ |
 | symptom-similarity-service | <strong>개요</strong><br> (1) SBERT를 활용하여 Sentence Embedding <br> (2) 지식 그래프를 활용하여 맞춤형 서비스 <br><br> <strong>기술 스택</strong><br> SBERT, 지식 그래프 | 24.06.27. ~ |
 | my-health-ap-server | <strong>개요</strong><br> (1) 질의 응답 서비스 <br> (2) 회원 관리 <br><br> <strong>기술 스택</strong><br> Application Server, Spring Boot, JPA, Test | 24.02.07. ~ |
+| my-health-webflux-server | <strong>개요</strong><br> (1) 비동기 이벤트 기반 서버로 전환 <br> (2) Non-Blocking 동기 서버로 전환 <br><br> <strong>기술 스택</strong><br> Spring Webflux | 24.07.13. ~ |
 
 <br>
 
@@ -27,9 +29,8 @@ OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Jav
 | 1. 우회 비속어 필터링 | 직접 벡터 표현 | 2022.07.05. ~ 2022.08.09. |
 | 2. 학대 피해 아동 감정 모니터링 | ICT 멘토링, 팀장, 감성 분석, 실시간 다중 채팅 서버, MSA, Docker, Notion | 2023.02.19. ~ 2023.11.15. |
 | 3. 원초적 검색기 | indexing, querying, ranking | 2023.07.09. ~ 2023.08.08. |
-| 4. 청소년 불안 감정 모니터링 | 유사한 프로젝트 설계 개선 | 2023.08.05. ~ 2023.12.06. |
-| 5. 검색기 개선 및 운영 | 스터디, 가용성, SBERT, K3s, Apache JMeter, Prometheus, Grafana, Jira | 2023.12.05. ~ 2024.02.01. |
-| 6. 질의응답 시스템 | 5가지 시스템, 학부 집약 대표 프로젝트 | 2024.02.07. ~ 현재 |
+| 4. 검색기 개선 및 운영 | 스터디, 가용성, SBERT, K3s, Apache JMeter, Prometheus, Grafana, Jira | 2023.12.05. ~ 2024.02.01. |
+| 5. 질의응답 시스템 | 6가지 프로젝트, 학부 경험과 배운 지식을 집약한 프로젝트 | 2024.02.07. ~ 현재 |
 
 ---
 ### 나의 수행 내용 요약
@@ -48,7 +49,7 @@ OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Jav
 |----|-----|
 |목표| 자연어 처리 학습 모델을 활용해서 사회에 도움이 되는 팀 프로젝트 기획, 개발, 협업 |
 |개요| - 아동<br> chat gpt 모델과 채팅 <br><br> - 전문가<br> 감성 분석 모델이 아동의 채팅을 분석한 결과를 모니터링<br> 필요시 아동과 채팅 상담|
-|수행 내용| 1) RNN 계열의 감성 분석 모델 개발  <br> 2) MSA 고려한 백엔드 설계 <br> 3) NestJS, Flask 활용하여 서버 구현 <br> 4) Redis, Socket.io 활용하여 다중 채팅 서버 구현 <br> 5) Docker로 컨테이너 이미지 빌드 |
+|수행 내용| 1) MSA 고려한 백엔드 설계 <br> 2) NestJS, Flask 활용하여 서버 구현 <br> 3) Redis, Socket.io 활용하여 다중 채팅 서버 구현 <br> 4) Docker로 컨테이너 이미지 빌드 |
 |서버<br>(서비스)| 메인 서버(API 서버), 감성 분석 서버, 챗봇 채팅 서버, 아동과 전문가 채팅 서버|
 |언어| TypeScript, JavaScript, Python|
 |기타| MySQL, TypeORM, Notion, GitLab|
@@ -65,15 +66,7 @@ OS, 컴퓨터 구조, 자료구조, 알고리즘, 네트워크, Database, C, Jav
 |기타| NestJS, Flask, MySQL|
 |참고 도서|'검색을 위한 딥러닝' 토마소 테오필리 저|
 
-4. 청소년 불안 감정 모니터링
-
-|항목| 내용|
-|----|-----|
-|목표|응집도와 결합도를 고려한 모듈 설계|
-|개요| 프로젝트 기획에 맞게 이전의 프로젝트 보다 개선된 설계 및 개발 <br> NestJS 모듈들의 상호작용 관계를 손쉽게 파악할 수 있도록 응집도 고려하여 설계|
-|수행 내용| 1) NestJS 모듈 간의 관계를 간소화하기 위해 응집도를 고려하며 설계 <br> 2) 추가 기능 개발|
-
-5. 검색기 개선 및 운영
+4. 검색기 개선 및 운영
 
 |항목| 내용|
 |----|-----|
