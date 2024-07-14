@@ -8,7 +8,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 구성: 6가지 프로젝트
 <br>OS, 자료구조, 알고리즘, 디자인패턴, 네트워크, 데이터베이스, C, Java, 운영, 모니터링 등 <br> 이전의 프로젝트 경험과 배운 이론 총집약한 맞춤형 의료 질의응답 시스템
 
-| 프로젝트명 | 목표 | 기간 |
+| Repository | 목표 | 기간 |
 | - | - | - |
 | medical-qna-monitor | <strong>개요</strong><br> (1) 노드 시스템 자원 측정 및 모니터링 <br> (2) Application Server에 대한 로그 모니터링 <br><br> <strong>기술 스택</strong><br> C언어, Monitoring System Resource & Log, Spring Boot, WebSocket | 24.07 ~ |
 | medical-qna-client | <strong>개요</strong><br> (1) 운영자의 노드 모니터링용 클라이언트 <br> (2) 일반 사용자의 질의응답용 클라이언트 <br><br> <strong>기술 스택</strong><br> JavaFX, 비동기 병렬 프로그래밍, 디자인패턴, 자료구조 & 정렬, WebSocket | 24.07 ~ |
