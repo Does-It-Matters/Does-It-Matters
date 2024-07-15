@@ -22,9 +22,9 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 ---
 
 # 기타 진행한 프로젝트
-### n. 프로젝트 [ 새로운 시도 ] 기간
+### 기간 : 프로젝트 [ 새로운 시도 ] 
 <details>
-  <summary>1. 우회 비속어 필터링 [ 직접 벡터 표현 ] 2022.07 ~ 2022.08</summary>
+  <summary> 2022.07 ~ 2022.08 : 우회 비속어 필터링 [ 직접 벡터 표현 ] </summary>
 
 |항목| 내용|
 |----|-----|
@@ -35,7 +35,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 </details>
 
 <details>
-  <summary>2. 학대 피해 아동 감정 모니터링 [ ICT 멘토링, 팀장, 실시간 다중 채팅 서버, MSA, Docker, Notion ] 23.02 ~ 23.11</summary>
+  <summary> 2023.02 ~ 2023.11 : 학대 피해 아동 감정 모니터링 [ ICT 멘토링, 팀장, 실시간 다중 채팅 서버, MSA, Docker, Notion ] </summary>
 
 |항목| 내용|
 |----|-----|
@@ -48,7 +48,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 </details>
 
 <details>
-  <summary>3. 원초적 검색기 [ indexing, querying, ranking ] 23.07 ~ 23.08</summary>
+  <summary> 2023.07 ~ 2023.08 : 원초적 검색기 [ indexing, querying, ranking ] </summary>
 
 |항목| 내용|
 |----|-----|
@@ -62,7 +62,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 </details>
 
 <details>
-  <summary>4. 검색기 개선 및 운영 [ 스터디, 가용성, SBERT, Rancher Desktop, Apache JMeter, Prometheus, Grafana, Jira ] 23.12 ~ 24.02</summary>
+  <summary> 2023.12 ~ 2024.02 : 검색기 개선 및 운영 [ 스터디, 가용성, SBERT, Rancher Desktop, Apache JMeter, Prometheus, Grafana, Jira ] </summary>
 
 |항목| 내용|
 |----|-----|
