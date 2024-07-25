@@ -7,9 +7,9 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 (아래의 목표에 맞춰 진행 중)
 | 이때까지의 프로젝트 경험과 배운 이론을 하나에 담은 질의응답 시스템 | 기간 |
 | - | - |
-| <strong>1. medical-qna-monitor</strong><br> &nbsp;-&nbsp;&nbsp;목적: 시스템 자원, 로그  모니터링 서버 <br> &nbsp;-&nbsp;&nbsp;목표: 비동기 데이터 스트림, 리액티브 프로그래밍 <br> &nbsp;-&nbsp;&nbsp;기술: Spring Webflux, RSocket, RabbitMQ, C언어 | 24.07 ~ |
-| <strong>2. medical-qna-client</strong><br> &nbsp;-&nbsp;&nbsp;목적: 시스템 실시간 모니터링, 질의응답 클라이언트 <br> &nbsp;-&nbsp;&nbsp;목표: 객체지향 설계, 병렬 프로그래밍, 디자인패턴, 자료구조 & 정렬 구현 <br> &nbsp;-&nbsp;&nbsp;기술: RSocket, JavaFX & Spring Boot (JavaFX에 DI, IoC 적용) | 24.07 ~ |
-| <strong>3. medical-qna-gateway</strong><br> &nbsp;-&nbsp;&nbsp;목적: AP server에 대한 API server, 로드밸런서 <br> &nbsp;-&nbsp;&nbsp;목표: 분산 성능 측정 <br> &nbsp;-&nbsp;&nbsp;기술:  Spring Cloud Gateway, Redis | 24.07 ~ |
+| <strong>1. medical-qna-monitor</strong><br> &nbsp;-&nbsp;&nbsp;목적: 시스템 자원, 로그  모니터링 서버 <br> &nbsp;-&nbsp;&nbsp;목표: 비동기 데이터 스트림, 리액티브 프로그래밍 <br> &nbsp;-&nbsp;&nbsp;기술: Spring Webflux, RSocket, RabbitMQ | 24.07 ~ |
+| <strong>2. medical-qna-client</strong><br> &nbsp;-&nbsp;&nbsp;목적: 시스템 실시간 모니터링, 질의응답 클라이언트 <br> &nbsp;-&nbsp;&nbsp;목표: 객체지향 설계, 병렬 프로그래밍, JavaFX와 Spring Boot 결합 (DI, IoC 적용) <br> &nbsp;-&nbsp;&nbsp;기술: RSocket, Spring Boot, JavaFX | 24.07 ~ |
+| <strong>3. medical-qna-gateway</strong><br> &nbsp;-&nbsp;&nbsp;목적: my-health-server에 대한 API server, 로드밸런서 <br> &nbsp;-&nbsp;&nbsp;목표: 분산 성능 측정 <br> &nbsp;-&nbsp;&nbsp;기술:  Spring Cloud Gateway, Redis | 24.07 ~ |
 | <strong>4. my-health-ap-server</strong><br> &nbsp;-&nbsp;&nbsp;목적: 질의 응답, 회원 관리 AP Server <br> &nbsp;-&nbsp;&nbsp;목표: 멀티 인스턴스 분산, 동시성 처리 <br> &nbsp;-&nbsp;&nbsp;기술: Spring Boot, JPA, Test, Spring Actuator | 24.02 ~ |
 | <strong>5. my-health-webflux-server</strong><br> &nbsp;-&nbsp;&nbsp;목적: 리액티브 프로그래밍 <br> &nbsp;-&nbsp;&nbsp;목표: 기존의 동기 블로킹 서버와 성능 비교 <br> &nbsp;-&nbsp;&nbsp;기술: Spring Webflux, RabbitMQ, Webflux Test | 24.07 ~ |
 | <strong>6. symptom-similarity-service</strong><br> &nbsp;-&nbsp;&nbsp;목적: SBERT와 지식 그래프를 활용한 의미론적 검색 | 24.06 ~ |
