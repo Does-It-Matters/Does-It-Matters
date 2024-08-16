@@ -3,17 +3,34 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br> <br> 많이 서투르더라도 나의 길을 걸어가자
 <hr> 
 
-## 대표 프로젝트 
-(아래의 목표에 맞춰 진행 중)
-| 이때까지의 경험과 지식을 하나에 담은 질의응답 시스템 |
-| - |
-| <strong>1. medical-qna-client</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 시스템 실시간 모니터링, 성능 테스트 시행 & 결과 보고서 작성 <br> &nbsp;-&nbsp;&nbsp;목표: 객체지향 설계, 병렬 프로그래밍, JavaFX와 Spring 결합 (DI와 IoC, 이벤트 기반 아키텍처 적용) <br> &nbsp;-&nbsp;&nbsp;기술: RSocket, Spring Boot, JavaFX |
-| <strong>2. medical-qna-monitor</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 시스템 자원, 로그  모니터링 서버 <br> &nbsp;-&nbsp;&nbsp;목표: 비동기 데이터 스트림, 리액티브 프로그래밍 <br> &nbsp;-&nbsp;&nbsp;기술: RSocket, RabbitMQ |
-| <strong>3. medical-qna-gateway</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: my-health-server에 대한 API server, 로드밸런서 <br> &nbsp;-&nbsp;&nbsp;목표: 분산 성능 측정 <br> &nbsp;-&nbsp;&nbsp;기술:  Spring Cloud Gateway, Redis, RabbitMQ |
-| <strong>4. my-health-ap-server</strong> (2024.02 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 질의 응답, 회원 관리 AP Server <br> &nbsp;-&nbsp;&nbsp;목표: 멀티 인스턴스 분산, 동시성 처리, (육각형 아키텍처를 활용한) 영속성 계층 전환 등의 성능 테스트 <br> &nbsp;-&nbsp;&nbsp;기술: Spring WebMVC, JPA, MyBatis, MongoDB, Redis, RabbitMQ, Spring Actuator |
-| <strong>5. my-health-webflux-server</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 리액티브 프로그래밍으로 기존 서버 전환 <br> &nbsp;-&nbsp;&nbsp;목표: 기존의 동기 블로킹 서버와 성능 비교 <br> &nbsp;-&nbsp;&nbsp;기술: Spring WebMVC -> Spring WebFlux |
-| <strong>6. symptom-similarity-service</strong> (2024.06 ~ 중단) <br> &nbsp;-&nbsp;&nbsp;목적: SBERT와 지식 그래프를 활용한 의미론적 검색 |
-|테스트 목표: JUnit 5, Mockito, Spring Boot Test, Spring WebMVC Test, Spring WebFlux Test, Spring Data JPA Test, Spring Data Redis Test |
+## 대표 시스템 
+### 6가지 프로젝트로 구성된 질의응답 시스템 
+
+1. medical-qna-client (2024.07 ~ 현재)
+<br>- 목적: AP 서버 실시간 모니터링, 성능 테스트 시행 & 결과 보고서 작성 
+<br>- 목표: 객체지향 설계, 병렬 프로그래밍, DI와 IoC, 이벤트 기반 아키텍처, 효율적인 데이터 스트림 처리
+
+3. medical-qna-monitor (2024.07 ~ 현재) 
+<br>- 목적: 시스템 자원, 로그  모니터링 서버 
+<br>- 목표: RSocket을 활용한 효율적인 데이터 스트림 전송, 리액티브 프로그래밍
+
+3. medical-qna-gateway</strong> (2024.07 ~ 현재) 
+<br>- 목적: my-health-server에 대한 API server, 로드밸런서 
+<br>- 목표: JWT 인증, Spring Cloud Gateway를 활용하여 데이터 분산
+  
+4. my-health-ap-server</strong> (2024.02 ~ 현재) 
+<br>- 목적: 질의 응답 Application Server 
+<br>- 목표: 육각형 아키텍처 설계, 모니터링, 성능 테스트(멀티 인스턴스 분산, 동시성 처리, 영속성 계층(JPA, MyBatis, MongoDB) 전환, Redis 캐싱 등)
+  
+5. my-health-webflux-server (2024.07 ~ 현재) 
+<br>- 목적: 리액티브 프로그래밍으로 기존 서버 전환 
+<br>- 목표: 기존의 동기 블로킹 서버와 성능 비교(Spring WebMVC -> Spring WebFlux)
+  
+6. symptom-similarity-service (2024.06 ~ 중단)
+<br>- 목적: SBERT와 지식 그래프를 활용한 의미론적 검색
+  
+테스트 목표: JUnit 5, Mockito, Spring Test (WebMVC, WebFlux, JPA, Redis, ...)
+<br> CI/CD 목표: 빌드, 테스트, 배포 자동화
 
 <br>
 
