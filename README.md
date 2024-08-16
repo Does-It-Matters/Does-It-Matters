@@ -5,15 +5,15 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 
 ## 대표 프로젝트 
 (아래의 목표에 맞춰 진행 중)
-| 이때까지의 프로젝트 경험과 배운 이론을 하나에 담은 질의응답 시스템 | 기간 |
-| - | - |
-| <strong>1. medical-qna-client</strong><br> &nbsp;-&nbsp;&nbsp;목적: 시스템 실시간 모니터링, 성능 테스트 시행 & 결과 보고서 작성 <br> &nbsp;-&nbsp;&nbsp;목표: 객체지향 설계, 병렬 프로그래밍, JavaFX와 Spring 결합 (DI, IoC, 이벤트 기반 아키텍처 적용) <br> &nbsp;-&nbsp;&nbsp;기술: Spring RSocket, Spring Boot, JavaFX | 24.07 ~ |
-| <strong>2. medical-qna-monitor</strong><br> &nbsp;-&nbsp;&nbsp;목적: 시스템 자원, 로그  모니터링 서버 <br> &nbsp;-&nbsp;&nbsp;목표: 비동기 데이터 스트림, 리액티브 프로그래밍 <br> &nbsp;-&nbsp;&nbsp;기술: Spring RSocket, Spring AMQP (RabbitMQ) | 24.07 ~ |
-| <strong>3. medical-qna-gateway</strong><br> &nbsp;-&nbsp;&nbsp;목적: my-health-server에 대한 API server, 로드밸런서 <br> &nbsp;-&nbsp;&nbsp;목표: 분산 성능 측정 <br> &nbsp;-&nbsp;&nbsp;기술:  Spring Cloud Gateway, Spring Data Redis | 24.07 ~ |
-| <strong>4. my-health-ap-server</strong><br> &nbsp;-&nbsp;&nbsp;목적: 질의 응답, 회원 관리 AP Server <br> &nbsp;-&nbsp;&nbsp;목표: 멀티 인스턴스 분산, 동시성 처리 <br> &nbsp;-&nbsp;&nbsp;기술: Spring WebMVC, Spring Data JPA, Spring Data Redis, Test, Spring Actuator | 24.02 ~ |
-| <strong>5. my-health-webflux-server</strong><br> &nbsp;-&nbsp;&nbsp;목적: 리액티브 프로그래밍 <br> &nbsp;-&nbsp;&nbsp;목표: 기존의 동기 블로킹 서버와 성능 비교 <br> &nbsp;-&nbsp;&nbsp;기술: Spring Webflux, Spring AMQP (RabbitMQ), Test | 24.07 ~ |
-| <strong>6. symptom-similarity-service</strong><br> &nbsp;-&nbsp;&nbsp;목적: SBERT와 지식 그래프를 활용한 의미론적 검색 | 24.06 ~ |
-|테스트 목표: JUnit 5, Mockito, Spring Boot Test, Spring WebMVC Test, Spring WebFlux Test, Spring Data JPA Test, Spring Data Redis Test| |
+| 이때까지의 경험과 지식을 하나에 담은 질의응답 시스템 |
+| - |
+| <strong>1. medical-qna-client</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 시스템 실시간 모니터링, 성능 테스트 시행 & 결과 보고서 작성 <br> &nbsp;-&nbsp;&nbsp;목표: 객체지향 설계, 병렬 프로그래밍, JavaFX와 Spring 결합 (DI와 IoC, 이벤트 기반 아키텍처 적용) <br> &nbsp;-&nbsp;&nbsp;기술: RSocket, Spring Boot, JavaFX |
+| <strong>2. medical-qna-monitor</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 시스템 자원, 로그  모니터링 서버 <br> &nbsp;-&nbsp;&nbsp;목표: 비동기 데이터 스트림, 리액티브 프로그래밍 <br> &nbsp;-&nbsp;&nbsp;기술: RSocket, RabbitMQ |
+| <strong>3. medical-qna-gateway</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: my-health-server에 대한 API server, 로드밸런서 <br> &nbsp;-&nbsp;&nbsp;목표: 분산 성능 측정 <br> &nbsp;-&nbsp;&nbsp;기술:  Spring Cloud Gateway, Redis, RabbitMQ |
+| <strong>4. my-health-ap-server</strong> (2024.02 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 질의 응답, 회원 관리 AP Server <br> &nbsp;-&nbsp;&nbsp;목표: 멀티 인스턴스 분산, 동시성 처리, (육각형 아키텍처를 활용한) 영속성 계층 전환 등의 성능 테스트 <br> &nbsp;-&nbsp;&nbsp;기술: Spring WebMVC, JPA, MyBatis, MongoDB, Redis, RabbitMQ, Spring Actuator |
+| <strong>5. my-health-webflux-server</strong> (2024.07 ~ 현재) <br> &nbsp;-&nbsp;&nbsp;목적: 리액티브 프로그래밍으로 기존 서버 전환 <br> &nbsp;-&nbsp;&nbsp;목표: 기존의 동기 블로킹 서버와 성능 비교 <br> &nbsp;-&nbsp;&nbsp;기술: Spring WebMVC -> Spring WebFlux |
+| <strong>6. symptom-similarity-service</strong> (2024.06 ~ 중단) <br> &nbsp;-&nbsp;&nbsp;목적: SBERT와 지식 그래프를 활용한 의미론적 검색 |
+|테스트 목표: JUnit 5, Mockito, Spring Boot Test, Spring WebMVC Test, Spring WebFlux Test, Spring Data JPA Test, Spring Data Redis Test |
 
 <br>
 
