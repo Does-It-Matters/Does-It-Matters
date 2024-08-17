@@ -3,40 +3,51 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br> <br> 많이 서투르더라도 나의 길을 걸어가자
 <hr> 
 
-## 대표 시스템 
-### 6가지 프로젝트로 구성된 질의응답 시스템 
+### 여러 프로젝트로 구성된 질의응답 시스템 
+||목표|
+|-|-|
+|설계| 객체지향, 디자인패턴, 스프링의 DI/IoC/Event-Driven 아키텍처, 육각형 아키텍처 등으로 결합도 감소|
+|설계 변화| 멀티 인스턴스, 병렬 프로그래밍, 비동기 프로그래밍, 영속성 계층 변화, 캐싱|
+|코드 검증| JUnit, Mockito, Spring 통합 테스트들을 활용하여 품질 보장|
+|성능 체크| 직접 개발한 자바 부하테스트 클라이언트로 결과 보고서 작성|
+|모니터링| 리소스/로그/메트릭에 대해 수집/전송/가공/표현|
+|보안| JWT, API 서버|
+|CI/CD| 빌드, 테스트, 배포 자동화|
 
+#### 프로젝트 구성
 1. medical-qna-client (2024.07 ~ 현재)
-<br>- 목적: AP 서버 실시간 모니터링, 성능 테스트 시행 & 결과 보고서 작성 
-<br>- 목표: 객체지향 설계, 병렬 프로그래밍, DI와 IoC, 이벤트 기반 아키텍처, 효율적인 데이터 스트림 처리
+<br>- 목적: AP 서버 실시간 모니터링, 성능 테스트 수행 & 결과 보고서 작성 
+<br>- 목표: 결합도를 줄인 설계, 병렬 프로그래밍, Spring 이벤트 기반 아키텍처, 효율적인 데이터 스트림 처리
+<br>- 기술: Spring Boot를 적용한 JavaFX, RSocket
 
 3. medical-qna-monitor (2024.07 ~ 현재) 
 <br>- 목적: 시스템 자원, 로그  모니터링 서버 
-<br>- 목표: RSocket을 활용한 효율적인 데이터 스트림 전송, 리액티브 프로그래밍
+<br>- 목표: 데이터 수집, 효율적인 데이터 스트림 전송
+<br>- 기술: Spring RSocket, RabbitMQ
 
 3. medical-qna-gateway</strong> (2024.07 ~ 현재) 
-<br>- 목적: my-health-server에 대한 API server, 로드밸런서 
-<br>- 목표: JWT 인증, Spring Cloud Gateway를 활용하여 데이터 분산
+<br>- 목적: API 서버, 로드밸런서 
+<br>- 목표: JWT 인증, 부하 분산
+<br>- 기술: Spring Cloud Gateway
   
 4. my-health-ap-server</strong> (2024.02 ~ 현재) 
-<br>- 목적: 질의 응답 Application Server 
-<br>- 목표: 육각형 아키텍처 설계, 모니터링, 성능 테스트(멀티 인스턴스 분산, 동시성 처리, 영속성 계층(JPA, MyBatis, MongoDB) 전환, Redis 캐싱 등)
+<br>- 목적: 질의 응답 AP 서버
+<br>- 목표: 육각형 아키텍처, 모니터링, 테스트, 멀티 인스턴스, 동시성 처리, 영속성 계층 전환, 캐싱
+<br>- 기술: Spring Actuator, JUnit/Mockito/SpringTest, JPA/MyBatis/MongoDB, Redis, RabbitMQ
   
 5. my-health-webflux-server (2024.07 ~ 현재) 
 <br>- 목적: 리액티브 프로그래밍으로 기존 서버 전환 
-<br>- 목표: 기존의 동기 블로킹 서버와 성능 비교(Spring WebMVC -> Spring WebFlux)
+<br>- 목표: 기존의 동기 블로킹 서버와 성능 비교
+<br>- 기술: Spring WebMVC -> Spring WebFlux
   
 6. symptom-similarity-service (2024.06 ~ 중단)
 <br>- 목적: SBERT와 지식 그래프를 활용한 의미론적 검색
-  
-테스트 목표: JUnit 5, Mockito, Spring Test (WebMVC, WebFlux, JPA, Redis, ...)
-<br> CI/CD 목표: 빌드, 테스트, 배포 자동화
 
 <br>
 
 ---
 
-# 기타 진행한 프로젝트
+### 기타 진행한 프로젝트
 <details>
   <summary> 2022.07 ~ 2022.08 : 우회 비속어 필터링 <br> &nbsp;&nbsp;&nbsp; 새로운 시도 : 직접 벡터 표현 </summary>
 
