@@ -16,27 +16,27 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 |CI/CD| 빌드, 테스트, 배포 자동화|
 
 #### 프로젝트 구성
-1. medical-qna-client (2024.07 ~ 현재)
+1. medical-qna-client - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
 <br>- 목적: AP 서버 실시간 모니터링, 성능 테스트 수행 & 결과 보고서 작성 
 <br>- 목표: 결합도를 줄인 설계, 병렬 프로그래밍, Spring 이벤트 기반 아키텍처, 효율적인 데이터 스트림 처리
 <br>- 기술: Spring Boot를 적용한 JavaFX, RSocket
 
-3. medical-qna-monitor (2024.07 ~ 현재) 
+3. medical-qna-monitor - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-monitor/wiki)
 <br>- 목적: 시스템 자원, 로그  모니터링 서버 
 <br>- 목표: 데이터 수집, 효율적인 데이터 스트림 전송
 <br>- 기술: Spring RSocket, RabbitMQ
 
-3. medical-qna-gateway</strong> (2024.07 ~ 현재) 
+3. medical-qna-gateway - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-gateway/wiki)
 <br>- 목적: API 서버, 로드밸런서 
 <br>- 목표: JWT 인증, 부하 분산
 <br>- 기술: Spring Cloud Gateway
   
-4. my-health-ap-server</strong> (2024.02 ~ 현재) 
+4. my-health-ap-server - [깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
 <br>- 목적: 질의 응답 AP 서버
 <br>- 목표: 육각형 아키텍처, 모니터링, 테스트, 멀티 인스턴스, 동시성 처리, 영속성 계층 전환, 캐싱
 <br>- 기술: Spring Actuator, JUnit/Mockito/SpringTest, JPA/MyBatis/MongoDB, Redis, RabbitMQ
   
-5. my-health-webflux-server (2024.07 ~ 현재) 
+5. my-health-webflux-server 
 <br>- 목적: 리액티브 프로그래밍으로 기존 서버 전환 
 <br>- 목표: 기존의 동기 블로킹 서버와 성능 비교
 <br>- 기술: Spring WebMVC -> Spring WebFlux
