@@ -3,48 +3,65 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br> <br> 많이 서투르더라도 나의 길을 걸어가자
 <hr> 
 
-### 여러 프로젝트로 구성된 질의응답 시스템 
+## 여러 프로젝트로 구성된 질의응답 시스템 
 ||목표|
 |-|-|
-|협업| 적극적인 코드 리뷰, JavaDoc으로 문서화, 깃허브 위키로 약속들 정의|
-|설계| 객체지향, 디자인패턴, 스프링의 DI/IoC/Event-Driven 아키텍처, 육각형 아키텍처 등으로 결합도 감소|
-|설계 변화| 멀티 인스턴스, 병렬 프로그래밍, 비동기 프로그래밍, 동시성 처리, 영속성 계층 변화, 캐싱|
+|협업| 적극적인 코드 리뷰, JavaDoc으로 문서화, 깃허브 위키로 진행 과정 공유|
+|설계| 각 계층에 대한 디자인, 스프링 DI/IoC/Event, 육각형 및 모듈화 아키텍처로 결합도 감소 및 응집도 향상|
+|설계 변화| MSA 전환, 멀티 인스턴스, 병렬 프로그래밍, 비동기 프로그래밍, 동시성 처리, 영속성 계층 변화, 캐싱|
 |코드 검증| JUnit, Mockito, Spring 통합 테스트들을 활용하여 품질 보장|
 |성능 체크| 직접 개발한 자바 부하테스트 클라이언트로 결과 보고서 작성|
 |모니터링| 리소스/로그/메트릭에 대해 수집/전송/가공/표현|
+|CI/CD| 깃허브 패키지에 api, impl 라이브러리 배포, 마이크로서비스 배포|
 |보안| JWT, API 서버|
-|CI/CD| 빌드, 테스트, 배포 자동화|
 
-#### 프로젝트 구성
-1. medical-qna-client - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
-<br>- 목적: AP 서버 실시간 모니터링, 성능 테스트 수행 & 결과 보고서 작성 
-<br>- 목표: 결합도를 줄인 설계, 병렬 프로그래밍, Spring 이벤트 기반 아키텍처, 효율적인 데이터 스트림 처리
-<br>- 기술: Spring Boot를 적용한 JavaFX, RSocket
+### 프로젝트 구성
+#### 1. medical-qna-client - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
+1) <b>목적</b> (1) 애플리케이션 사용 (2) 로그 및 리소스 실시간 모니터링 (3) 부하 테스트 수행 및 결과 보고서 작성
 
-3. medical-qna-monitor - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-monitor/wiki)
-<br>- 목적: 시스템 자원, 로그  모니터링 서버 
-<br>- 목표: 데이터 수집, 효율적인 데이터 스트림 전송
-<br>- 기술: Spring RSocket, RabbitMQ
+2) <b>주요 특징</b>
+<br>(1) 결합도를 줄인 아키텍처, 디자인 설계
+<br>(2) 응집도를 높이기 위한 멀티 모듈
+<br>(3) 블로킹 큐와 쓰레드를 활용한 병렬 프로그래밍
+<br>(4) JavaFX에 Spring 도입하여 DI, IoC, 이벤트 기반 아키텍처, 개발 생산성 향상 추구
+<br>(5) 실시간 데이터에 대한 효율적인 데이터 스트림 처리
 
-3. medical-qna-gateway - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-gateway/wiki)
-<br>- 목적: API 서버, 로드밸런서 
-<br>- 목표: JWT 인증, 부하 분산
-<br>- 기술: Spring Cloud Gateway
+#### 2. my-health-ap-server - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
+1) <b>목적</b> (1) 질의 응답 모놀리식 AP 서버
+2) <b>주요 특징</b>
+<b><br>- MSA 전환 과정!!!</b>
+<br>(1) 육각형 아키텍처로 애플리케이션 계층의 독립성 확보
+<br>(2) 도메인 별로 독립성 확보
+<br>(3) 확보된 독립성으로 각 도메인의 애플리케이션 계층을 api, impl 두 모듈로 모듈화
+<br>(4) api, impl 두 모듈을 깃허브 패키지에 CI/CD를 적용하여 배포
+<b><br>(5) MSA 전환!!!</b>
+<br>(6) 출력 어댑터 전환(JPA/MyBatis/MongoDB)
+<br>(7) 트랜잭션 처리를 위해 Saga 패턴 적용
+<br>(8) 통신 실패 대비
+<br><b><br>- 기타 주요 요소!!!</b>
+<br>모니터링, 테스트, 멀티 인스턴스, 동시성 처리, 캐싱
+
+#### 3. medical-qna-monitor - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-monitor/wiki)
+1) <b>목적</b> (1) 모니터링 클라이언트에 시스템 자원, 로그 데이터를 송신하는 서버
+2) <b>주요 특징</b>
+<br>(1) 데이터 수집
+<br>(2) 효율적인 데이터 스트림 전송
+
+#### 4. medical-qna-gateway - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-gateway/wiki)
+1) <b>목적</b> (1) API 서버 (2) 로드밸런서 
+2) <b>주요 특징</b>
+<br>(1) JWT 인증 및 라우팅
+<br>(2) 요청 헤더에 로그 식별자 추가하여 중앙화된 로그 모니터링
+<br>(3) 수평 스케일링 처리
   
-4. my-health-ap-server - [깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
-<br>- 목적: 질의 응답 AP 서버
-<br>- 목표: 육각형 아키텍처, 모니터링, 테스트, 멀티 인스턴스, 동시성 처리, 영속성 계층 전환, 캐싱
-<br>- 기술: Spring Actuator, JUnit/Mockito/SpringTest, JPA/MyBatis/MongoDB, Redis, RabbitMQ
+#### 5. my-health-webflux-server
+1) <b>목적</b> (1) 리액티브 프로그래밍으로 기존 서버 전환
+2) <b>주요 특징</b>
+<br>(1) 애플리케이션 계층 모듈 재사용
+<br>(2) 기존의 동기 블로킹 서버와 성능 비교
   
-5. my-health-webflux-server 
-<br>- 목적: 리액티브 프로그래밍으로 기존 서버 전환 
-<br>- 목표: 기존의 동기 블로킹 서버와 성능 비교
-<br>- 기술: Spring WebMVC -> Spring WebFlux
-  
-6. symptom-similarity-service (2024.06 ~ 중단)
+#### 6. symptom-similarity-service (2024.06 ~ 중단)
 <br>- 목적: SBERT와 지식 그래프를 활용한 의미론적 검색
-
-<br>
 
 ---
 
