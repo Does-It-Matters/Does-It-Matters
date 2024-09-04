@@ -16,9 +16,10 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 |CI/CD| 깃허브 패키지에 api, impl 라이브러리 배포, 마이크로서비스 배포|
 |보안| JWT, API 서버|
 
-### 프로젝트 구성
-#### 1. medical-qna-client - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
-1) <b>목적</b> (1) 애플리케이션 사용 (2) 로그 및 리소스 실시간 모니터링 (3) 부하 테스트 수행 및 결과 보고서 작성
+## 프로젝트 구성
+### 1. medical-qna-client - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
+1) <b>목적</b>
+<br>(1) 애플리케이션 사용 (2) 로그 및 리소스 실시간 모니터링 (3) 부하 테스트 수행 및 결과 보고서 작성
 
 2) <b>주요 특징</b>
 <br>(1) 결합도를 줄인 아키텍처, 디자인 설계
@@ -26,9 +27,12 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>(3) 블로킹 큐와 쓰레드를 활용한 병렬 프로그래밍
 <br>(4) JavaFX에 Spring 도입하여 DI, IoC, 이벤트 기반 아키텍처, 개발 생산성 향상 추구
 <br>(5) 실시간 데이터에 대한 효율적인 데이터 스트림 처리
+---
 
-#### 2. my-health-ap-server - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
-1) <b>목적</b> (1) 질의 응답 모놀리식 AP 서버
+### 2. my-health-ap-server - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
+1) <b>목적</b>
+<br>(1) 질의 응답 모놀리식 AP 서버
+
 2) <b>주요 특징</b>
 <b><br>- MSA 전환 과정!!!</b>
 <br>(1) 육각형 아키텍처로 애플리케이션 계층의 독립성 확보
@@ -41,28 +45,40 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>(8) 통신 실패 대비
 <br><b><br>- 기타 주요 요소!!!</b>
 <br>모니터링, 테스트, 멀티 인스턴스, 동시성 처리, 캐싱
+---
 
-#### 3. medical-qna-monitor - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-monitor/wiki)
-1) <b>목적</b> (1) 모니터링 클라이언트에 시스템 자원, 로그 데이터를 송신하는 서버
+### 3. medical-qna-monitor - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-monitor/wiki)
+1) <b>목적</b>
+<br>(1) 모니터링 클라이언트에 시스템 자원, 로그 데이터를 송신하는 서버
+
 2) <b>주요 특징</b>
 <br>(1) 데이터 수집
 <br>(2) 효율적인 데이터 스트림 전송
+---
 
-#### 4. medical-qna-gateway - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-gateway/wiki)
-1) <b>목적</b> (1) API 서버 (2) 로드밸런서 
+### 4. medical-qna-gateway - [깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-gateway/wiki)
+1) <b>목적</b>
+<br>(1) API 서버 (2) 로드밸런서 
+
 2) <b>주요 특징</b>
 <br>(1) JWT 인증 및 라우팅
 <br>(2) 요청 헤더에 로그 식별자 추가하여 중앙화된 로그 모니터링
 <br>(3) 수평 스케일링 처리
-  
-#### 5. my-health-webflux-server
-1) <b>목적</b> (1) 리액티브 프로그래밍으로 기존 서버 전환
+---
+
+### 5. my-health-webflux-server
+1) <b>목적</b>
+<br>(1) 리액티브 프로그래밍으로 기존 서버 전환
+
 2) <b>주요 특징</b>
 <br>(1) 애플리케이션 계층 모듈 재사용
 <br>(2) 기존의 동기 블로킹 서버와 성능 비교
-  
-#### 6. symptom-similarity-service 
-1) <b>목적</b> (1) 관련있는 질문을 의미론적으로 검색
+---
+
+### 6. symptom-similarity-service 
+1) <b>목적</b>
+<br>(1) 관련있는 질문을 의미론적으로 검색
+
 2) <b>주요 특징</b>
 <br>(1) RAG 시스템으로 진행 가능
 3) <b>역할</b>
