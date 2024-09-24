@@ -20,18 +20,20 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 | 보안      | JWT, API 서버                                                                          |
 
 ## 시스템 구성
-### 1. 모니터링 클라이언트
+### 1. 모니터링 클라이언트 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/monitoring-client/wiki)
 1) <b>목적</b>
 <br>(1) 분산 트레이싱을 위한 로그 처리
 <br>(2) 로그 및 리소스 실시간 모니터링
 <br>(3) 부하 테스트 수행 및 결과 보고서 작성
 
-3) <b>주요 특징</b>
+2) <b>주요 특징</b>
 <br> - 실시간 데이터 스트림에 대한 효율적인 처리
 <br>(1) Message Broker로 부터 Log 데이터 수집
-<br>(2) Scala 비동기 병렬 프로그래밍 활용하여 로그 처리 및 부하테스트
+<br>(2) Scala와 Akka 분산 비동기 병렬 프로그래밍을 활용하여 로그 처리 및 부하테스트
 <br>(3) 블로킹 큐와 쓰레드를 활용한 병렬 프로그래밍
 <br>(4) backpressure로 로그 처리 속도 조절
+<br>(5) gRPC로 효율적인 통신
+<br>(6) 분산 컴퓨팅에 대한 MSA 분리 계획
 
 ### 2. 애플리케이션 서버 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
 1) <b>목적</b>
@@ -51,13 +53,14 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>- 트랜잭션 처리를 위해 Saga 패턴 적용
 <br>- 통신 실패 대비
 
-### 3. 모니터링 서버
+### 3. 모니터링 서버 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/monitoring-server/wiki)
 1) <b>목적</b>
 <br>(1) 모니터링 클라이언트에 수집한 시스템 리소스 데이터를 송신하는 서버
 
 2) <b>주요 특징</b>
 <br>(1) Linux /proc 데이터 수집
-<br>(2) RSocket 활용하여 효율적인 데이터 스트림 전송
+<br>(2) gRPC를 활용하여 효율적인 데이터 스트림 전송
+<br>(3) 리눅스에서 유연하고 가볍게 실행 목표
 
 ### 4. 게시판 클라이언트 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
 1) <b>목적</b>
@@ -65,13 +68,20 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>(2) 로그 및 리소스 실시간 모니터링(중단)
 <br>(3) 부하 테스트 수행 및 결과 보고서 작성(중단)
 
-3) <b>주요 특징</b>
+2) <b>주요 특징</b>
 <br> 일반 사용자 사용 용도(게시판 이용) 외 운영자 기능 개발 중단 예정 (Scala 모니터링 클라이언트로 전환)
 <br>(1) 결합도를 줄인 아키텍처, 디자인 설계
 <br>(2) 응집도를 높이기 위한 멀티 모듈 도입
 <br>(3) JavaFX에 Spring DI, IoC를 도입하여 의존성 감소
 <br>(4) Spring Framework의 이벤트를 도입하여 순환 참조 완화
 <br>(5) Spring RSocket 등 Spring Framework로 개발 생산성 향상
+
+### 5. Scala Playground - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/scala-playground/wiki)
+1) <b>목적</b>
+<br>(1) 모니터링 클라이언트를 MSA로 전환하는 다양한 실험적 시도
+
+2) <b>주요 특징</b>
+<br> Scala의 객체지향, 함수형, 병렬 프로그래밍 다양한 시도
 
 ---
 
