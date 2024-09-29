@@ -76,13 +76,6 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>(4) Spring Framework의 이벤트를 도입하여 순환 참조 완화
 <br>(5) Spring RSocket 등 Spring Framework로 개발 생산성 향상
 
-### 5. Scala Playground - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/scala-playground/wiki)
-1) <b>목적</b>
-<br>(1) 모니터링 클라이언트를 MSA로 전환하는 다양한 실험적 시도
-
-2) <b>주요 특징</b>
-<br> Scala의 객체지향, 함수형, 병렬 프로그래밍 다양한 시도
-
 ---
 
 ### 기타 진행한 프로젝트
