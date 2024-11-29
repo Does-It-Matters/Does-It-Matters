@@ -20,25 +20,25 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 
 # 2024년 스토리라인 
 ## MSA 질의응답 시스템 (24년 11월 ~ 현재)
-### Backend
+### 5. Backend
 - 기존의 모놀리식 QnA 서버에서 팀원들간 협업 동기화에 대한 비효율성을 개선하기 위해 MSA로 전환 기획
 - MSA에서의 DB ACID 연구
 - JVM, Spring, Apache JMeter 동작 원리를 이해하여 서버 부하 테스트 분석
 
-### Frontend (예정)
+### 6. Frontend (예정)
 - 기존의 게시판 클라이언트를 정리하여 다시 개발
 - JavaFX와 Spring을 활용하여 결합도를 줄이고 응집도 향상 목표
 <br>
 
 ## Monolithic 질의응답 시스템 (24년 7월 ~ 24년 9월)
-### 1. 모놀리식 QnA 서버 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
+### 3. 모놀리식 QnA 서버 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
 - 기존에 개발된 블록체인 관련 서버를 학습용으로 축소한 버전
 - 최소한의 질의응답 서비스 제공
 - 육각형 아키텍처 개선 for 출력 어댑터 전환(JPA/MyBatis/MongoDB)
 - 멀티 모듈로 분리 - 인터페이스 모듈, 구현체 모듈, 출력 어댑터 모듈 분리 등
 - 이후 MSA 전환
 
-### 2. 게시판 클라이언트 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
+### 4. 게시판 클라이언트 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
 - 게시판을 이용할 수 있는 클라이언트 개발
 - 결합도를 줄인 아키텍처, 디자인 설계
 - 응집도를 높이기 위한 멀티 모듈 도입
@@ -50,12 +50,12 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>
 
 ## 블록체인 활용 의료 관리 시스템 (24년 2월 ~ 24년 6월)
-### 기획 
+### 1. 기획 
 - 환자가 본인의 데이터를 소유, 제공, 관리
 - 의료 관련 질의응답
 - 질의응답에서 RAG 활용하여 개인 맞춤형 설명 (실제 구현 x)
 
-### 백엔드
+### 2. 백엔드
 - 처음으로 스프링 부트를 활용하여 서버 개발
 - 의료진, 환자로 나누어 회원 관리 개발
 - 질의응답 기능 개발
