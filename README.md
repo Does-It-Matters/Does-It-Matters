@@ -21,9 +21,8 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 # 2024년 스토리라인 
 ## [MSA 질의응답 시스템 (24년 11월 ~ 현재)](https://github.com/orgs/Micro-Answer/repositories)
 ### 5. Backend
-- 기존의 모놀리식 QnA 서버에서 팀원들간 협업 동기화에 대한 비효율성을 개선하기 위해 MSA로 전환 기획
-- MSA에서의 DB ACID 연구
-- JVM, Spring, Apache JMeter 동작 원리를 이해하여 서버 부하 테스트 분석
+- 기존의 모놀리식 QnA 서버에서 MSA로의 전환에 대한 다양한 경험을 위해 기획
+- 일반 유저 서비스  [general-service](https://github.com/Micro-Answer/msa-general-service) 개발 담당 
 
 ### 6. Frontend (예정)
 - 기존의 게시판 클라이언트를 정리하여 다시 개발
@@ -34,7 +33,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 ### 3. 모놀리식 QnA 서버 - [자세한 내용은 깃허브 wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
 - 기존에 개발된 블록체인 관련 서버를 학습용으로 축소한 버전
 - 최소한의 질의응답 서비스 제공
-- 육각형 아키텍처 개선 for 출력 어댑터 전환(JPA/MyBatis/MongoDB)
+- 육각형 아키텍처 개선
 - 멀티 모듈로 분리 - 인터페이스 모듈, 구현체 모듈, 출력 어댑터 모듈 분리 등
 - 이후 MSA 전환
 
