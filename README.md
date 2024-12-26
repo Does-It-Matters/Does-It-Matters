@@ -21,12 +21,16 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 # 2024년 스토리라인 
 ## [MSA 질의응답 시스템 (24년 11월 ~ 현재)](https://github.com/orgs/Micro-Answer/repositories)
 ### 5. Backend
-- 기존의 모놀리식 QnA 서버에서 MSA로의 전환에 대한 다양한 경험을 위해 기획
-- 일반 유저 서비스  [general-service](https://github.com/Micro-Answer/msa-general-service) 개발 담당 
+- 기존의 모놀리식 서버에서 MSA로의 전환에 대한 다양한 경험을 위해 기획
+- 일반 유저 서비스  [general-service](https://github.com/Micro-Answer/msa-general-service) 개발 담당
+  - 육각형 아키텍처, 모듈 분리, Spring의 의존성 주입을 활용한 유연한 설계 추구
+  - 자바의 다양한 동시성 처리 도전 후 k6로 성능 비교 
+- 팀원들의 여러 마이크로서비스를 모놀리식 서버에 적용한 후 k6로 성능 비교 
 
-### 6. Frontend (예정)
+### 6. Frontend
 - 기존의 게시판 클라이언트를 정리하여 다시 개발
-- JavaFX와 Spring을 활용하여 결합도를 줄이고 응집도 향상 목표
+- 이전의 객체들의 관계, 디자인 패턴 대신 모듈화된 아키텍처 목표
+- 이를 위해 JavaFX에 Spring과 모듈을 활용
 <br>
 
 ## Monolithic 질의응답 시스템 (24년 7월 ~ 24년 9월)
@@ -44,8 +48,8 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 - JavaFX에 Spring DI, IoC를 도입하여 의존성 감소
 - Spring Framework의 이벤트를 도입하여 순환 참조 완화
 - Spring RSocket 등 Spring Framework로 개발 생산성 향상
-- 로그 및 리소스 실시간 모니터링(중단)
-- 부하 테스트 수행 및 결과 보고서 작성(중단)
+- 로그 및 리소스 실시간 모니터링(계획 수준에서 중단)
+- 부하 테스트 수행 및 결과 보고서 작성(계획 수준에서 중단)
 <br>
 
 ## 블록체인 활용 의료 관리 시스템 (24년 2월 ~ 24년 6월)
