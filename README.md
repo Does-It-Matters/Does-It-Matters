@@ -24,7 +24,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 ## 기술 스택 
 - 언어: Java, Kotlin
 - 프레임워크: Spring
-- 데이터베이스: MySQL(JPA)
+- 데이터베이스: MySQL (JPA)
 - 설계: 육각형 아키텍처, 모듈러 아키텍처
 - 단위 테스트: JUnit, Mockito
 - 성능 테스트: Grafana k6
