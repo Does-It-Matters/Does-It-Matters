@@ -56,14 +56,14 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>
 
 ## 2024.11 ~ 2025.01
-### MSA 회원 관리 시스템 백엔드
+### [MSA 회원 관리 시스템 백엔드](https://github.com/Micro-Answer/msa-general-service)
 1. 담당 서비스에서 육각형 아키텍처와 모듈, Spring의 DI를 활용한 유연한 설계 적용
 2. 자바의 다양한 동시성 처리 시도 후 k6로 성능 비교
 <!-- 
 - 기존의 모놀리식 서버에서 MSA로의 전환에 대한 다양한 경험을 위해 기획
 -->
 
-### MSA 회원 관리 시스템 프론트엔드
+### [MSA 회원 관리 시스템 프론트엔드](https://github.com/Micro-Answer/qna-frontend-javafx)
 1. 기존의 게시판 클라이언트를 정리하여 다시 개발
 2. 화면 전환 프레임워크 개발!
 <!-- 
@@ -73,7 +73,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>
 
 ## 2024.07 ~ 2024.09
-### Monolithic 질의응답 시스템 백엔드 [wiki](https://github.com/Does-It-Matters/my-health-block-ap-server/wiki)
+### [Monolithic 질의응답 시스템 백엔드](https://github.com/Does-It-Matters/my-health-block-ap-server)
 1. 이전 서버를 축소하여 다양한 시도를 민첩하게!
 2. 육각형 아키텍처 개선
 3. 모듈 분리 (인터페이스 & 구현체 모듈, 출력 어댑터 모듈)
@@ -82,7 +82,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 - 이후 MSA 전환
 -->
 
-### Monolithic 질의응답 시스템 프론트엔드 [wiki](https://github.com/Does-It-Matters/medical-qna-client/wiki)
+### [Monolithic 질의응답 시스템 프론트엔드](https://github.com/Does-It-Matters/medical-qna-client)
 1. JavaFX + Spring DI & IoC
 2. 응집도를 높이기 위한 멀티 모듈 도입
 3. 순환 참조 완화를 위한 이벤트 기반 설계
@@ -96,7 +96,7 @@ _"세상을 넓게 바라보고 사람을 깊이있게 이해하자"_
 <br>
 
 ## 2024.02 ~ 2024.06
-### 블록체인 활용 의료 관리 시스템
+### [블록체인 활용 의료 관리 시스템](https://github.com/javac-javac)
 1. Spring Boot 첫 도전! (회원 관리, 질의응답 개발)
 
 <br> 
